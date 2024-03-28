@@ -20,6 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Importa todas as urls criadas no app paginas
+    path('',include('api.urls')),
     path('',include('paginas.urls')),
     path('',include('cadastro.urls')),
     path('',include('usuario.urls')),

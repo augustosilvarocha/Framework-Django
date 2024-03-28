@@ -2,6 +2,7 @@ from django.urls import path
 from .views import CursoCreate, CursoUpdate, CursoDelete, CursoList, listar_cursos, comprar_curso, calcular_faturamento, criar_curso, atualizar_curso, deletar_curso, listar_cursos_fbv
 
 
+
 urlpatterns = [
     #path('endereço/',MinhaView.as_view(),name='nome-da-url'),
 

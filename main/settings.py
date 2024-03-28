@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'usuario.apps.UsuarioConfig',
     'crispy_forms',
     'crispy_bootstrap4',
+    'api',
+    'rest_framework',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
@@ -136,6 +138,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Configuração de autenticação
 
-LOGIN_REDIRECT_URL = 'index'
-LOGOUT_REDIRECT_URL = 'login'
-LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'curso-lista'
+LOGOUT_REDIRECT_URL = 'Login'
+LOGIN_URL = 'Login'

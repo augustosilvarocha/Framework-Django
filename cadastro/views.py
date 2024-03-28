@@ -77,9 +77,6 @@ def calcular_faturamento(request):
     cursos = Curso.objects.all()
     faturamento_total = sum(curso.faturamento for curso in cursos)
     return render(request, 'paginas/faturamento.html', {'cursos': cursos, 'faturamento_total': faturamento_total})
-
-
-
 # ------------------------------------ FBV -------------------------------------------------
 
 @login_required(login_url=reverse_lazy('login'))
@@ -154,3 +151,4 @@ def listar_cursos_fbv(request):
     cursos = Curso.objects.all()
     function_called = 'A'
     return render(request,'cadastro/lista/cursos.html',{'cursos': cursos, 'function_called': function_called})
+
